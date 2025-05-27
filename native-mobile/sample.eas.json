@@ -1,0 +1,32 @@
+{
+    "cli": {
+    "version": ">= 7.6.2",
+    "promptToConfigurePushNotifications" : false,
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "autoIncrement": true,
+      "distribution": "internal"
+    },
+    "local_android_simulator": {
+      "developmentClient": false,
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "production": {
+      "autoIncrement": true,
+      "channel": "production"
+    },
+    "ios-simulator": {
+      "autoIncrement": false,
+      "developmentClient": true,
+      "distribution": "internal",
+      "ios": {
+        "simulator": true
+      }
+    }
+  }
+}
